@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 // Change button text and add sold-out class
                 buyTicket.textContent = 'Sold Out';
-                movieTitle.classList.add('sold-out');
+                document.getElementById(`${movieTitle.textContent}`).classList.add('sold-out');
             }
         });
     }
